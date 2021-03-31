@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+            app:showAsAction="ifRoom"
+            android:title="info"
+            android:iconTint="@color/deep_red"
+            android:icon="@drawable/info"
+            android:id="@+id/info">
+    </item>
+
+    <item
+            app:showAsAction="ifRoom"
+            android:title="music"
+            android:iconTint="@color/deep_red"
+            android:icon="@drawable/mus"
+            android:id="@+id/music">
+    </item>
+
+    <item
+            app:showAsAction="ifRoom"
+            android:title="share"
+            android:icon="@drawable/sha"
+
+            android:id="@+id/share">
+    </item>
+
+    <item
+            app:showAsAction="ifRoom"
+            android:title="rate"
+            android:icon="@drawable/star"
+            android:id="@+id/rate">
+    </item>
+
+</menu>

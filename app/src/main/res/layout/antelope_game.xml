@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/mainscreen">
+
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/background">
+            <FrameLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent">
+
+                <pl.droidsonroids.gif.GifImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/birds" />
+
+            </FrameLayout>
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/lvbk"
+                    android:id="@+id/bg1"/>
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/lvbk"
+                    android:id="@+id/bg2"/>
+            />
+
+        </RelativeLayout>
+        <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/frame">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tap and Go"
+                    android:id="@+id/taptostartTV"
+                    android:textSize="45dp"
+                    android:textColor="@color/deep_red"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+            />
+
+            <pl.droidsonroids.gif.GifImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/lion"
+                    android:id="@+id/lion0"
+                    android:layout_gravity=""
+                    android:visibility="gone"/>
+
+            <pl.droidsonroids.gif.GifImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/lion"
+                    android:id="@+id/lion1"
+                    android:layout_gravity=""
+                    android:visibility="gone"/>
+
+            <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/scoreball"
+                    android:src="@drawable/grass"
+                    android:visibility="gone"/>
+
+            <pl.droidsonroids.gif.GifImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/lion"
+                    android:id="@+id/lion"
+                    android:layout_gravity=""
+                    android:visibility="gone"/>
+
+
+            <pl.droidsonroids.gif.GifImageView
+                    android:layout_width="110dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/antelope"
+                    android:id="@+id/antelope"
+                    android:layout_gravity="bottom"
+            />
+        </FrameLayout>
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Level : "
+                    android:textSize="20dp"
+                    android:textColor="@color/deep_red"
+                    android:textStyle="bold"
+            />
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="@color/deep_red"
+                    android:textStyle="bold"
+                    android:id="@+id/lvlTV"
+                    android:paddingLeft="5dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/scoreLL"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="15dp"
+                android:orientation="vertical">
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Score: "
+                        android:textSize="20dp"
+                        android:textColor="@color/deep_red"
+                        android:textStyle="bold"
+                        android:id="@+id/scoreTV"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/realscore"
+                        android:text="0"
+                        android:paddingLeft="20dp"
+                        android:textSize="20dp"
+                        android:textColor="@color/deep_red"
+                        android:textStyle="bold"
+                />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/shields"
+                android:layout_alignEnd="@id/background"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="10dp"
+
+        >
+            <ImageView
+                    android:layout_width="112px"
+                    android:layout_height="147px"
+                    android:id="@+id/shield1"
+                    android:background="@drawable/antelope_lives"
+                    android:paddingLeft="100dp"
+                    android:layout_marginEnd="5dp"/>
+            <ImageView
+                    android:layout_width="112px"
+                    android:layout_height="147px"
+                    android:id="@+id/shield2"
+                    android:background="@drawable/antelope_lives"
+                    android:layout_marginEnd="5dp"/>
+            <ImageView
+                    android:layout_width="112px"
+                    android:layout_height="147px"
+                    android:id="@+id/shield3"
+                    android:background="@drawable/antelope_lives"
+                    android:layout_marginEnd="5dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

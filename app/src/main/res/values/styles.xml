@@ -1,0 +1,29 @@
+<resources>
+
+    <style name="Theme.AntelopeOfGold" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <item name="colorPrimary">@android:color/transparent</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:itemBackground">@color/white</item>
+        <item name="android:actionMenuTextColor">@color/black</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="android:fontFamily">@font/marlboro</item>
+        <item name="title">" "</item>
+        <item name="android:itemTextAppearance">@style/myCustomMenuTextAppearance</item>
+    </style>
+
+    <style name="myCustomMenuTextAppearance" parent="@android:style/TextAppearance.Widget.IconMenu.Item">
+        <item name="android:textColor">@color/deep_red</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">@color/black</item>
+    </style>
+
+    <style name="AlertDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">@color/white</item>
+        <item name="android:textColor">@color/deep_red</item>
+    </style>
+
+</resources>

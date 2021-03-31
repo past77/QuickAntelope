@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/lvbk">
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:layout_marginTop="10dp"
+              android:layout_marginBottom="20dp"
+              android:textStyle="bold"
+              android:textSize="35sp"
+              android:textColor="@color/deep_red"
+              android:text="STATISTIC"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+
+        <ListView
+            android:id="@+id/highscoreLV"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <Button
+                android:layout_width="110dp"
+                android:layout_height="55dp"
+                android:id="@+id/backfromhsBTN"
+                android:onClick="backHome"
+                android:layout_marginTop="50dp"
+                android:text="Home"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:textColor="@color/deep_red"
+                android:background="@drawable/temstart"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
